@@ -1,8 +1,54 @@
-# React + Vite
+# PRISEE - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Folder Structure
 
-Currently, two official plugins are available:
+```text
+my-react-app/
+│
+├── public/                  (Public assets)
+│   ├── index.html
+│   └── favicon.ico
+│
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── styles/
+│   │       ├── components/  (Component-specific styles)
+│   │       └── main.scss    (Main styles)
+│   │
+│   ├── components/           (Reusable UI components)
+│   │   ├── Button/
+│   │   ├── Header/
+│   │   └── ...
+│   │
+│   ├── pages/                (Top-level page components)
+│   │   ├── Home/
+│   │   ├── About/
+│   │   └── ...
+│   │
+│   ├── services/             (API services, utilities)
+│   │   ├── api.js
+│   │   └── ...
+│   │
+│   ├── context/              (React context providers)
+│   │   ├── AuthContext.js
+│   │   └── ...
+│   │
+│   ├── hooks/                (Custom hooks)
+│   │   ├── useFetch.js
+│   │   └── ...
+│   │
+│   ├── utils/                (Helper functions)
+│   │   ├── formatDate.js
+│   │   └── ...
+│   │
+│   ├── App.js                (Main component)
+│   ├── index.js              (Entry point)
+│   └── ...
+│
+├── .gitignore
+├── package.json
+├── README.md
+└── ...
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
