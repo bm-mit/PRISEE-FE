@@ -1,5 +1,11 @@
 # PRISEE - Frontend
 
+## Naming conventions
+
+- Use PascalCase for components and component's filenames. (`PrimaryButton`, `Button.js`)
+- Use camelCase for variables, function names, folder names and non component
+  file names. (`const myVariable = 'hello'`, `components/`, `jsonParser.js`)
+
 ## Folder Structure
 
 ```text
