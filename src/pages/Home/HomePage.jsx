@@ -1,7 +1,11 @@
+import NavBar from "@/components/NavBar/NavBar";
+import banner from "@/assets/banner.png";
+import { navBarItems } from "@/components/NavBar/navBarItems";
+
 function HomePage() {
   return (
     <>
-      <h1 className="display-1">Scientific PRISEE</h1>
+      <NavBar bannerImage={banner} navItems={navBarItems}></NavBar>
     </>
   );
 }
