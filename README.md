@@ -1,5 +1,31 @@
 # PRISEE - Frontend
 
+## Getting started
+
+- Install dependencies.
+
+```bash
+npm install
+```
+
+- Build the project.
+
+```bash
+npm run build
+```
+
+- Preview the production build.
+
+```bash
+npm run preview
+```
+
+- Deploy to Firebase.
+
+```bash
+firebase deploy
+```
+
 ## Naming conventions
 
 - Use PascalCase for components and component's filenames. (`PrimaryButton`, `Button.js`)
