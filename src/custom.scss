@@ -1,0 +1,23 @@
+$primary: #2e54ad;
+$secondary: #031443;
+$body-color: $secondary;
+
+@import "bootstrap/scss/bootstrap";
+
+:root {
+  --#{$prefix}emphasis-color-rgb: $secondary;
+}
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "primary": $primary,
+  )
+);
+
+$utilities-text: map-merge(
+  $utilities-colors,
+  (
+    "body": to-rgb($body-color),
+  )
+);

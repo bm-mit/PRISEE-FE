@@ -1,22 +1,22 @@
 export const navBarItems = [
   {
-    id: "prisee-front",
-    title: "PRISEE (FRONT)",
+    id: "prisee-fullname",
+    title: "PTNK Student Research & Journal Club",
     link: "/",
   },
   {
-    id: "signature",
-    title: "SIGNATURE",
+    id: "prisee-insider",
+    title: "PRISEEInsider",
     link: "/",
   },
   {
-    id: "research-program",
-    title: "RESEARCH PROGRAM",
+    id: "records",
+    title: "RECORDS",
     link: "/",
   },
   {
-    id: "record",
-    title: "RECORD",
+    id: "connect",
+    title: "CONNECT",
     link: "/",
   },
 ];

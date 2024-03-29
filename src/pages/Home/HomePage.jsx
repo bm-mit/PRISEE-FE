@@ -4,9 +4,12 @@ import { navBarItems } from "@/components/NavBar/navBarItems";
 
 function HomePage() {
   return (
-    <>
+    <div
+      className="min-vh-100"
+      style={{ backgroundColor: "var(--bs-secondary)" }}
+    >
       <NavBar bannerImage={banner} navItems={navBarItems}></NavBar>
-    </>
+    </div>
   );
 }
 

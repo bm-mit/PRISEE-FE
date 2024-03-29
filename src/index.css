@@ -3,3 +3,7 @@
 * {
   font-family: "Lora", serif;
 }
+
+:root {
+  --primary-color: #2e54ad;
+}

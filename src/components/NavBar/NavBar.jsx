@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import NavBarItem from "./NavBarItem";
+import "./NavBar.css";
 
 NavBar.propTypes = {
   bannerImage: PropTypes.string.isRequired,
@@ -14,10 +15,10 @@ NavBar.propTypes = {
 
 export default function NavBar({ bannerImage, navItems }) {
   return (
-    <div className="container-lg">
+    <div className="container-fluid bg-white">
       <div className="navbar navbar-expand-lg bg-tertiary">
-        <a className="navbar-brand w-75" href="/">
-          <img className="img-fluid" src={bannerImage} alt="banner" />
+        <a className="navbar-brand" href="/">
+          <img src={bannerImage} alt="banner" />
         </a>
         <button
           className="navbar-toggler"
@@ -31,18 +32,18 @@ export default function NavBar({ bannerImage, navItems }) {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            {navItems.map((navItem) => (
+          <ul className="navbar-nav ms-auto mt-1 border-top border-5 border-dark">
+            {navItems.map((navItem, index) => (
               <NavBarItem
                 key={navItem.id}
                 title={navItem.title}
                 link={navItem.link}
+                className={index === 0 ? "text-primary" : ""}
               />
             ))}
           </ul>
         </div>
       </div>
-      <hr className="border-5 my-0" />
     </div>
   );
 }

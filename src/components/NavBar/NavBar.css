@@ -1,0 +1,8 @@
+.navbar-brand img {
+  height: 45px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  text-decoration: underline;
+  transition: all 0.5s;
+}
