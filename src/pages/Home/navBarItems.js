@@ -1,4 +1,4 @@
-export const navBarItems = [
+export const mainNavBarItems = [
   {
     id: "prisee-fullname",
     title: "PTNK Student Research & Journal Club",

@@ -1,6 +1,6 @@
 import NavBar from "@/components/NavBar/NavBar";
 import banner from "@/assets/banner.png";
-import { navBarItems } from "@/components/NavBar/navBarItems";
+import { mainNavBarItems } from "./navBarItems";
 
 function HomePage() {
   return (
@@ -10,7 +10,7 @@ function HomePage() {
     >
       <NavBar
         bannerImage={banner}
-        navItems={navBarItems}
+        navItems={mainNavBarItems}
         id="mainNavBar"
       ></NavBar>
     </div>
