@@ -7,13 +7,18 @@ NavItemContainer.propTypes = NavItemContainerPropTypes;
 export default function NavItemContainer({
   id,
   className,
+  isExpand,
   navItems,
   itemsClassName,
 }) {
   return (
-    <div className="collapse navbar-collapse" id={id}>
+    <div
+      className={`collapse navbar-collapse ${isExpand ? "" : "justify-content-end"}`}
+      id={id}
+      data-bs-parent="#root"
+    >
       <ul
-        className={`${className} navbar-nav ms-auto mt-1 border-top border-5 border-dark`}
+        className={`${className} navbar-nav ${isExpand ? "flex-grow-1" : ""}`}
       >
         {navItems.map((navItem) => (
           <NavItem

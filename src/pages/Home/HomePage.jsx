@@ -1,6 +1,7 @@
+import Nav from "@/components/Nav/Nav";
 import NavBar from "@/components/NavBar/NavBar";
 import banner from "@/assets/banner.png";
-import { navBarItems } from "@/components/NavBar/navBarItems";
+import { mainNavBarItems, subNavBarItems } from "./navBarItems";
 
 function HomePage() {
   return (
@@ -10,9 +11,19 @@ function HomePage() {
     >
       <NavBar
         bannerImage={banner}
-        navItems={navBarItems}
+        navItems={mainNavBarItems}
         id="mainNavBar"
+        collapseSize="lg"
       ></NavBar>
+      <Nav
+        navItems={subNavBarItems}
+        id="subNavbar"
+        isExpand={true}
+        collapseSize="xl"
+        collapseButtonClassName="bg-white"
+        containerClassName="justify-content-between"
+        itemsClassName="text-white link-underline-light link-underline-opacity-0 link-underline-opacity-100-hover"
+      />
     </div>
   );
 }

@@ -9,6 +9,7 @@ export const NavItemPropTypes = {
 export const NavItemContainerPropTypes = {
   id: PropTypes.string.isRequired,
   className: PropTypes.string,
+  isExpand: PropTypes.bool,
   navItems: PropTypes.arrayOf(
     PropTypes.shape({
       ...NavItemPropTypes,
@@ -20,7 +21,9 @@ export const NavItemContainerPropTypes = {
 
 export const NavPropTypes = {
   id: PropTypes.string.isRequired,
-  bannerImage: PropTypes.string.isRequired,
+  bannerImage: PropTypes.string,
+  className: PropTypes.string,
+  collapseSize: PropTypes.string.isRequired,
   navItems: NavItemContainerPropTypes.navItems,
   containerClassName: NavItemContainerPropTypes.className,
   itemsClassName: NavItemContainerPropTypes.itemsClassName,
