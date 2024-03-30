@@ -13,8 +13,17 @@ function HomePage() {
         bannerImage={banner}
         navItems={mainNavBarItems}
         id="mainNavBar"
+        collapseSize="lg"
       ></NavBar>
-      <Nav navItems={subNavBarItems} id="subNavbar" />
+      <Nav
+        navItems={subNavBarItems}
+        id="subNavbar"
+        isExpand={true}
+        collapseSize="xl"
+        collapseButtonClassName="bg-white"
+        containerClassName="justify-content-between"
+        itemsClassName="text-white link-underline-light link-underline-opacity-0 link-underline-opacity-100-hover"
+      />
     </div>
   );
 }
