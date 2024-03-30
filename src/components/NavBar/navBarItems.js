@@ -3,6 +3,7 @@ export const navBarItems = [
     id: "prisee-fullname",
     title: "PTNK Student Research & Journal Club",
     link: "/",
+    className: "text-primary",
   },
   {
     id: "prisee-insider",

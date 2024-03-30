@@ -1,12 +1,8 @@
-import PropTypes from "prop-types";
+import { NavItemPropTypes } from "./PropTypes";
 
-NavBarItem.propTypes = {
-  title: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-  className: PropTypes.string,
-};
+NavItem.propTypes = NavItemPropTypes;
 
-export default function NavBarItem({ title, link, className }) {
+export default function NavItem({ title, link, className }) {
   return (
     <li className="nav-item">
       <a
