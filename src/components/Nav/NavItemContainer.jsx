@@ -15,6 +15,7 @@ export default function NavItemContainer({
     <div
       className={`collapse navbar-collapse ${isExpand ? "" : "justify-content-end"}`}
       id={id}
+      data-bs-parent="#root"
     >
       <ul
         className={`${className} navbar-nav ${isExpand ? "flex-grow-1" : ""}`}
