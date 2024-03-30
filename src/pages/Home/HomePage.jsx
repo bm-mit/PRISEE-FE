@@ -8,7 +8,11 @@ function HomePage() {
       className="min-vh-100"
       style={{ backgroundColor: "var(--bs-secondary)" }}
     >
-      <NavBar bannerImage={banner} navItems={navBarItems}></NavBar>
+      <NavBar
+        bannerImage={banner}
+        navItems={navBarItems}
+        id="mainNavBar"
+      ></NavBar>
     </div>
   );
 }
