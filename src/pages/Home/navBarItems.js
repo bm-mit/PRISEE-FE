@@ -21,3 +21,31 @@ export const mainNavBarItems = [
     link: "/",
   },
 ];
+
+export const subNavBarItems = [
+  {
+    id: "research-opportunities",
+    title: "RESEARCH OPPORTUNITIES",
+    link: "/",
+  },
+  {
+    id: "practical-training",
+    title: "PRACTICAL TRAINING",
+    link: "/",
+  },
+  {
+    id: "scientific-prisee",
+    title: "SCIENTIFIC PRISEE",
+    link: "/",
+  },
+  {
+    id: "ptnk-journal-club",
+    title: "PTNK JOURNAL CLUB",
+    link: "/",
+  },
+  {
+    id: "project-exhibition",
+    title: "PROJECT EXHIBITION",
+    link: "/",
+  },
+];
