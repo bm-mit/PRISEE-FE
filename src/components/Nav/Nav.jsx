@@ -7,14 +7,18 @@ Nav.propTypes = NavPropTypes;
 
 export default function Nav({
   id,
+  isExpand,
   bannerImage,
+  className,
+  collapseSize,
+  collapseButtonClassName,
   navItems,
   containerClassName,
   itemsClassName,
 }) {
   return (
-    <div className="container-fluid bg-white" id={id}>
-      <div className="navbar navbar-expand-lg bg-tertiary">
+    <div className={`container-fluid ${className}`} id={id}>
+      <div className={`navbar navbar-expand-${collapseSize}`}>
         {bannerImage !== undefined ? (
           <a className="navbar-brand" href="/">
             <img src={bannerImage} alt="banner" />
@@ -22,7 +26,7 @@ export default function Nav({
         ) : null}
 
         <button
-          className="navbar-toggler"
+          className={`navbar-toggler ${collapseButtonClassName}`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target={`#${id}SupportedContent`}
@@ -36,6 +40,7 @@ export default function Nav({
         <NavItemContainer
           navItems={navItems}
           className={containerClassName}
+          isExpand={isExpand}
           itemsClassName={itemsClassName}
           id={`${id}SupportedContent`}
         />
