@@ -1,0 +1,37 @@
+main {
+  height: 30vw;
+  background-image: url(../../assets/homePageMainSectionBg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  font-size: 4vw;
+}
+
+main .row {
+  height: 50%;
+}
+
+main .row .col {
+  padding-left: 7.5vw;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+main .row .col p {
+  animation: 3s slidein 1s;
+  transition: transform 0.5s;
+}
+
+main .row .col p:hover {
+  transform: translateY(-5px);
+}
